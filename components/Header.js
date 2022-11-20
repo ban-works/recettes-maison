@@ -9,9 +9,7 @@ const headerText = "🐱 nounette's kitchen";
 
 const PageHeader = () => (
     <Disclosure as="nav">
-        {(
-            // { open }
-            ) => (
+        {() => (
             <>
                 <div className="max-w-7xl mx-auto py-4">
                     <div className="flex justify-between h-auto flex-wrap md:flex-nowrap">
@@ -19,7 +17,7 @@ const PageHeader = () => (
                             <div className="flex-shrink-0 flex grow md:grow-0 items-center justify-center">
                                 <Link href="/" passHref>
                                     <a href="replace">
-                                        <div style={{paddingLeft: '20px'}} className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
+                                        <div style={{ paddingLeft: '20px' }} className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
                                             <Image
                                                 src="/assets/logo.png"
                                                 alt="Logo"
