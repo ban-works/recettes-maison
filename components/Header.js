@@ -24,7 +24,6 @@ const PageHeader = () => (
                                                 width={48}
                                                 height={48}
                                             />
-                                            {/* <span>Home</span> */}
                                         </div>
                                     </a>
                                 </Link>
