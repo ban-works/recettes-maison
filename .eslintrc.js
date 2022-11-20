@@ -34,7 +34,7 @@ module.exports = {
         /* Enforces that there is no spreading for any JSX attribute.
          This enhances readability of code by being more explicit about what props are received by the component. */
         'react/jsx-props-no-spreading': 'off',
-        'max-len': ['error', { code: 120 }],
+        'max-len': ['error', { code: 150 }],
         /* Enforces the rule of https://reactjs.org/docs/hooks-rules.html */
         'react-hooks/rules-of-hooks': 'error',
         /* This is a new ESLint rule that verifies the list of dependencies for Hooks like useEffect and similar,
