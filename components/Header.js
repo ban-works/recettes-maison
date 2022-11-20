@@ -1,7 +1,7 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import Link from 'next/link';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+// import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Header } from 'flotiq-components-react';
 import Image from 'next/image';
 
@@ -9,7 +9,9 @@ const headerText = "🐱 nounette's kitchen";
 
 const PageHeader = () => (
     <Disclosure as="nav">
-        {({ open }) => (
+        {(
+            // { open }
+            ) => (
             <>
                 <div className="max-w-7xl mx-auto py-4">
                     <div className="flex justify-between h-auto flex-wrap md:flex-nowrap">
@@ -18,7 +20,7 @@ const PageHeader = () => (
                                 <Link href="/" passHref>
                                     <a href="replace">
                                         <div style={{paddingLeft: '20px'}} className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
-                                            <Image 
+                                            <Image
                                                 src="/assets/logo.png"
                                                 alt="Logo"
                                                 width={48}

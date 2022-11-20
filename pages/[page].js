@@ -27,8 +27,7 @@ const Home = ({ data, pageContext }) => {
             <Announcement
                 content={(
                     <span className="leading-normal">
-                        Le carnet de recettes 
-                        {' '}
+                        Le carnet de recettes
                         <span className="text-secondary font-medium">des nounettes</span>
                     </span>
                 )}
