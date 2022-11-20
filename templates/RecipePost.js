@@ -78,7 +78,7 @@ const RecipeTemplate = ({ post, pageContext }) => {
                 headerText2="your"
                 headerText3="meal!"
             />
-            <RecipeCards recipes={recipes} headerText="Next recipe to cook:" />
+            <RecipeCards recipes={recipes} headerText="Prochaine idée de recette :" />
         </Layout>
     );
 }

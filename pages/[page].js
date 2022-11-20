@@ -27,12 +27,9 @@ const Home = ({ data, pageContext }) => {
             <Announcement
                 content={(
                     <span className="leading-normal">
-                        A blog full of
+                        Le carnet de recettes 
                         {' '}
-                        <span className="text-secondary font-medium">easy to make recipes</span>
-                        <br />
-                        {' '}
-                        that take the stress out of cooking.
+                        <span className="text-secondary font-medium">des nounettes</span>
                     </span>
                 )}
                 rounded="none"

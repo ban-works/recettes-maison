@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import { Header } from 'flotiq-components-react';
 import Image from 'next/image';
 
-const headerText = 'All you can eat';
+const headerText = "🐱 nounette's kitchen";
 
 const PageHeader = () => (
     <Disclosure as="nav">
@@ -17,18 +17,19 @@ const PageHeader = () => (
                             <div className="flex-shrink-0 flex grow md:grow-0 items-center justify-center">
                                 <Link href="/" passHref>
                                     <a href="replace">
-                                        <div className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
-                                            <Image
-                                                src="/assets/recipe-logo.svg"
+                                        <div style={{paddingLeft: '20px'}} className="block w-[83px] md:w-[124px] w-auto h-8 md:h-12 relative">
+                                            <Image 
+                                                src="/assets/logo.png"
                                                 alt="Logo"
-                                                width={124}
+                                                width={48}
                                                 height={48}
                                             />
+                                            {/* <span>Home</span> */}
                                         </div>
                                     </a>
                                 </Link>
                             </div>
-                            <div className="-ml-2 mr-2 flex items-center md:hidden">
+                            {/* <div className="-ml-2 mr-2 flex items-center md:hidden">
                                 <Disclosure.Button
                                     className="inline-flex items-center justify-center p-2 rounded-md text-gray-400
                                         hover:text-gray-500 hover:bg-gray-100 focus:outline-none
@@ -41,14 +42,14 @@ const PageHeader = () => (
                                         <MenuIcon className="block h-6 w-6" aria-hidden="true" />
                                     )}
                                 </Disclosure.Button>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="order-3 md:order-2 hidden md:flex items-center justify-center w-full">
                             <Header additionalClasses={['!text-3xl font-semibold']}>
                                 {headerText}
                             </Header>
                         </div>
-                        <div className="order-1 md:order-3 flex items-center ">
+                        {/* <div className="order-1 md:order-3 flex items-center ">
                             <div className="flex-shrink-0">
                                 <a
                                     href="mailto:hello@domain.com"
@@ -58,22 +59,22 @@ const PageHeader = () => (
                                     Say Hi!
                                 </a>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="order-3 md:hidden flex items-center
                         justify-center w-full md:w-auto py-5 md:py-0"
                         >
-                            <h1 className="text-xl font-semibold">All you can eat</h1>
+                            <h1 className="text-xl font-semibold">{headerText}</h1>
                         </div>
                     </div>
                 </div>
 
-                <Disclosure.Panel className="md:hidden">
+                {/* <Disclosure.Panel className="md:hidden">
                     <div className="pt-4 pb-3 border-t border-gray-200">
                         <div className="flex items-center px-4 sm:px-6">
                             <p>Menu content here...</p>
                         </div>
                     </div>
-                </Disclosure.Panel>
+                </Disclosure.Panel> */}
             </>
         )}
     </Disclosure>
